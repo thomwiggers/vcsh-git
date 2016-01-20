@@ -1,5 +1,5 @@
 *
-!/.gitignore
 !/.gitconfig
 !/.gitignore.d
+/.gitignore.d/*
 !/.gitignore.d/git
