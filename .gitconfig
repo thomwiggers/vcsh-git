@@ -83,3 +83,9 @@
 	url = http://git.rded.nl
 [credential]
 	helper = /usr/lib/git-core/git-credential-gnome-keyring
+[transfer]
+	fsckobjects = true
+[fetch]
+	fsckobjects = true
+[receive]
+	fsckobjects = true
