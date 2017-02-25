@@ -56,7 +56,7 @@
 [mergetool]
     keepBackup = false
 [rerere]
-        #log fixed conflicts
+    # log fixed conflicts
     enabled = true
 [help]
     autocorrect = 1
@@ -88,3 +88,9 @@
     fsckobjects = true
 [git-up "fetch"]
     prune = true
+[branch]
+    autoSetupRebase = local
+[pull]
+    ff = only
+[rebase]
+    missingCommitsCheck = error
