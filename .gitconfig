@@ -1,3 +1,4 @@
+;  vim: set ts=4 sw=4 tw=0 ft=gitconfig et :
 # Sample gitconfig
 #
 # You probably want to change the [user] section here since you are not me.
@@ -19,7 +20,7 @@
     st = status
     count   = !git shortlog -sn
     tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    yolo = "!git commit -m \"$(curl -s whatthecommit.com/index.txt;echo;echo '[git yolo]')\""
+    yolo = "!git commit -m \"$(curl -s whatthecommit.com/index.txt | sed s/\\\"// ;echo;echo '[git yolo]')\""
     up = pull --rebase --autostash
     branch-name = "!git rev-parse --abbrev-ref HEAD"
     publish = "!git push -u origin $(git branch-name)"
